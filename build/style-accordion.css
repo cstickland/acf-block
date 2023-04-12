@@ -1,0 +1,29 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.accordion .question {
+  font-weight: bold;
+  cursor: pointer;
+}
+.accordion .answer {
+  font-size: 0.75rem;
+  max-height: 0;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+.accordion .answer.show {
+  max-height: 500px;
+}
+
+@keyframes reveal-accordion {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=style-accordion.css.map*/

@@ -1,0 +1,26 @@
+.accordion {
+	.question {
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.answer {
+		font-size: 0.75rem;
+		max-height: 0;
+		transition: all 0.2s ease-in-out;
+		overflow: hidden;
+		&.show {
+			max-height: 500px;
+		}
+	}
+}
+
+@keyframes reveal-accordion {
+	from {
+		opacity: 0;
+		height: 0;
+	}
+	to {
+		opacity: 1;
+		height: auto;
+	}
+}
